@@ -1,0 +1,21 @@
+.header {
+    padding: 24px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.36;
+}
+
+.header-nav__mobile {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,88 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.header {
+  padding: 24px 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.36;
+}
+
+.header-nav__mobile {
+  display: flex;
+  align-items: center;
+}
+
+/* Reset styles */
+body {
+  font-size: 12px;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+  width: 320px;
+}
+
+.button-icon-mobile {
+  border: none;
+  background: none;
+}
+
+.input-search {
+  position: relative;
+  display: inline-flex;
+  width: 173px;
+  height: 31px;
+  padding: 5px 1px 5px 48px;
+  border: 1px solid #111321;
+  border-radius: 20px;
+  background-image: url("../images/icon-sprites.svg#bx_search");
+  background-size: cover;
+  background-color: aqua;
+}/*# sourceMappingURL=index.css.map */
