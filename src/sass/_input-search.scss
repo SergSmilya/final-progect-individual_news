@@ -1,17 +1,31 @@
-.input-search {
-    position: relative;
-    display: inline-flex;
+.label-search.show {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: inline-flex;
+    }
+}
+
+.label-search {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        left: 30%;
+    }
+}
+
+.input-search { 
     width: 173px;
     height: 31px;
     padding: 5px 1px 5px 48px;
     border: 1px solid #111321;
     border-radius: 20px;
-    background-image: url('../images/icon-sprites.svg#bx_search');
-    background-size: cover;
-    background-color: aqua;
+
+    @media screen and (min-width: 768px) {
+            width: 213px;
+        }
 }
 
-// .icon-nav__mobile--position {
-//     position: absolute;
-//     top: 0;
-// }
+.icon-label-search {
+    position: absolute;
+    transform: translate(50%, 35%);
+}

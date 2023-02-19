@@ -1,0 +1,53 @@
+.theme.close {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.theme {
+    @media screen and (max-width: 767px) {
+        display: block;
+        position: absolute;
+        bottom: -100vw;
+    }
+}
+
+.theme-label {
+    display: flex;
+    align-items: center;
+
+}
+
+.checkbox {
+    appearance: none;
+}
+
+.icon-input {
+    // display: inline-block;
+    width: 40px;
+    height: 21px;
+}
+
+.checkbox:checked + .icon-input {
+    background-image: url('../images/toggle.svg');
+}
+
+.checkbox + .icon-input {
+    background-image: url('../images/toggle-moon.svg');
+}
+
+.icon-theme {
+    @media screen and (min-width: 1280px) {
+        display: none;
+    }
+}
+
+.theme__name {
+    display: none;
+    font-size: 18px;
+    line-height: 24px;
+
+    @media screen and (min-width: 1280px) {
+       display: inline-block;
+    }
+}

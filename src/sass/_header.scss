@@ -1,6 +1,7 @@
 .header {
     padding: 24px 0;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    position: relative;
 }
 
 .wrapper {
@@ -10,6 +11,7 @@
 }
 
 .logo {
+    z-index: 2;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.36;
@@ -18,4 +20,22 @@
 .header-nav__mobile {
     display: flex;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
+
+.header-nav__tablet-pc-list {
+    display: flex;
+    gap: 44px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1280px) {
+        gap: 70px;
+    }
+}
+

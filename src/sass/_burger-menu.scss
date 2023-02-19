@@ -1,0 +1,41 @@
+@media screen and (max-width: 767px) {
+    .wrap__burger-menu.open {
+            display: block;
+            background-color: white;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+    
+        }
+    
+        .wrap__burger-menu {
+            display: none;
+        }
+    
+        .close__burger-menu {
+            position: absolute;
+            top: 28px;
+            right: 16px;
+        }
+    
+        .burger-menu__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    
+        .burger-menu__link {
+            display: flex;
+            align-items: center;
+    
+        }
+    
+        .burger-menu__list {
+            margin-top: 68px;
+        }
+}
+
+.wrap__burger-menu {
+    @media screen and (min-width: 768px) {
+            display: none;
+        }
+}
